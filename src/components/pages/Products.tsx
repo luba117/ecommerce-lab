@@ -29,7 +29,7 @@ function Products() {
   }, []);
   useEffect(() => {
     const result = products.filter((p) =>
-      p.title.toLowerCase().includes(search.toLocaleLowerCase())
+      p.title.toLowerCase().includes(search.toLocaleLowerCase()),
     );
     setFiltered(result);
   }, [search, products]);

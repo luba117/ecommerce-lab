@@ -8,7 +8,7 @@ function Cart() {
 
   if (products.length === 0)
     return (
-      <div>
+      <div className="container">
         <h2>The cart is empty</h2>
         <p>
           <Link to="/products">Browse</Link>

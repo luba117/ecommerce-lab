@@ -30,17 +30,18 @@ const Checkout: React.FC = () => {
 
   if (products.length === 0)
     return (
-      <div>
+      <div className="container py-2">
         <h2>Checkout</h2>
         <p>No items in the cart.</p>
       </div>
     );
 
   return (
-    <div>
-      <h2>Checkout</h2>
+    <div className="container py-2">
+      <h2>Checkout</h2>{" "}
       <h3>Total: ${cartTotal.toFixed(2)}</h3>
-      <button className="btn btn-success" onClick={placeOrder}>
+      <hr/>
+      <button className="btn btn-success py-2" onClick={placeOrder}>
         Place Order
       </button>
     </div>

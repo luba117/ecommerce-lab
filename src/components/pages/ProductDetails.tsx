@@ -1,19 +1,14 @@
-import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useCart } from "../../hooks/useCart";
 import { type Product } from "../../interfaces/Product";
+import { useEffect, useState } from "react";
 
 function ProductDetails() {
   const { id } = useParams();
   const { addToCartItem } = useCart();
-
   const [product, setProduct] = useState<Product | null>(null);
-  const [error, setError] = useState(false);
-  const [search, setSearch]= useState("");
-
-  useEffect(() => {
-
-  }, [search, product])
+  const [error, setError] = useState(false); 
+  
 
   useEffect(() => {
     setError(false);

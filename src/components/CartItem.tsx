@@ -1,4 +1,3 @@
-import React from "react";
 import type { ProductCardProps } from "../interfaces/ProductCardProps";
 import { useCart } from "../hooks/useCart";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import type { Product } from "../interfaces/Product";
 import { Link } from "react-router-dom";
 import { useCart } from "../hooks/useCart";
 import type { ProductCardProps } from "../interfaces/ProductCardProps";

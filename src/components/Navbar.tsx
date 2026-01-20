@@ -1,6 +1,4 @@
-import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Cart from "./pages/Cart";
 import { useCart } from "../hooks/useCart";
 
 function Navbar() {

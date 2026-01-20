@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { OrderType } from "../../interfaces/OrderType";
 
 function Orders() {
@@ -8,13 +8,13 @@ function Orders() {
 
   if (orders.length === 0)
     return (
-      <div>
+      <div className="container py-2">
         <h2>Orders</h2>
         <p>No orders available.</p>
       </div>
     );
   return (
-    <div>
+    <div className="container py-2">
       {orders.map((o) => (
         <div key={o.id} className="card">
           <h3>Order #{o.id}</h3>

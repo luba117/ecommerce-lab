@@ -1,10 +1,9 @@
-import React from "react";
 import { useCart } from "../../hooks/useCart";
 import { Link, useNavigate } from "react-router-dom";
 import CartItem from "../CartItem";
 
 function Cart() {
-  const { products, removeFromCart, cartTotal } = useCart();
+  const { products, cartTotal } = useCart();
   const navigate = useNavigate();
 
   if (products.length === 0)
